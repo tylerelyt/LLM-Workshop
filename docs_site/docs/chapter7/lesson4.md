@@ -98,9 +98,9 @@ python rlhf_constructor.py \
 ### Format with scores
 ```json
 {
-  "prompt": "请解释什么是机器学习",
-  "chosen": "机器学习是人工智能的一个分支...",
-  "rejected": "机器学习就是让机器变得很聪明的技术。",
+  "prompt": "Please explain what machine learning is",
+  "chosen": "Machine learning is a branch of artificial intelligence...",
+  "rejected": "Machine learning is just a technology that makes machines smart.",
   "score_chosen": 8.5,
   "score_rejected": 3.2
 }

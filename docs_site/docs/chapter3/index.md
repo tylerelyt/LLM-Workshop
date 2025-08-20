@@ -9,10 +9,10 @@ description: "Production-grade RAG systems, knowledge graph construction, and en
 # Retrieval & Knowledge Engineering
 {: .no_toc }
 
-构建企业级检索增强生成系统、自动化知识图谱构建和智能数据库查询系统，掌握从信息检索到知识工程的完整技术栈。
+Build enterprise-grade retrieval-augmented generation systems, automated knowledge graph construction, and intelligent database query systems. Master the complete technology stack from information retrieval to knowledge engineering.
 {: .fs-6 .fw-300 }
 
-## 目录
+## Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
@@ -20,320 +20,319 @@ description: "Production-grade RAG systems, knowledge graph construction, and en
 
 ---
 
-## 章节概览
+## Chapter Overview
 
-本章深入探讨大语言模型时代的信息检索与知识工程技术，涵盖三个核心领域：
+This chapter delves into information retrieval and knowledge engineering technologies in the era of large language models, covering three core areas:
 
-🔍 **生产级 RAG 系统**
+🔍 **Production-Grade RAG Systems**
 {: .label .label-blue }
-BGE-M3 多粒度嵌入、神经网络重排序、上下文增强生成
+BGE-M3 multi-granular embeddings, neural reranking, context-enhanced generation
 {: .fs-3 }
 
-🕸️ **知识图谱构建**
+🕸️ **Knowledge Graph Construction**
 {: .label .label-green }
-实体关系抽取、思维链推理、自动化模式优化、交互式可视化
+Entity-relation extraction, chain-of-thought reasoning, automated schema optimization, interactive visualization
 {: .fs-3 }
 
-💾 **企业级 NL2SQL**
+💾 **Enterprise-Grade NL2SQL**
 {: .label .label-purple }
-自然语言到 SQL 转换、智能拒答机制、业务 BI 应用
+Natural language to SQL conversion, intelligent rejection mechanisms, business BI applications
 {: .fs-3 }
 
 ---
 
-## 核心技术栈
+## Core Technology Stack
 
-| 技术领域 | 核心技术 |
+| Technology Area | Core Technologies |
 |:---------|:------------|
-| **向量检索** | BGE-M3, BGE-reranker-v2-m3, FAISS |
-| **文本处理** | LangChain, RecursiveCharacterTextSplitter |
-| **知识图谱** | NetworkX, Pyvis, 实体链接算法 |
-| **推理增强** | Chain-of-Thought, 上下文工程 |
-| **数据库** | SQLite, 企业 BI 模拟环境 |
-| **模型服务** | DashScope (Qwen), OpenAI API |
+| **Vector Retrieval** | BGE-M3, BGE-reranker-v2-m3, FAISS |
+| **Text Processing** | LangChain, RecursiveCharacterTextSplitter |
+| **Knowledge Graphs** | NetworkX, Pyvis, Entity Linking Algorithms |
+| **Reasoning Enhancement** | Chain-of-Thought, Context Engineering |
+| **Database** | SQLite, Enterprise BI Simulation Environment |
+| **Model Services** | DashScope (Qwen), OpenAI API |
 
 ---
 
-## 学习路径
+## Learning Path
 
-### 初级路径：RAG 基础
-1. 完成 Lesson 1: 了解 RAG 系统架构
-2. 实践文档分块和向量嵌入
-3. 掌握检索和重排序机制
+### Beginner Path: RAG Fundamentals
+1. Complete Lesson 1: Understand RAG system architecture
+2. Practice document chunking and vector embeddings
+3. Master retrieval and reranking mechanisms
 
-### 中级路径：知识工程
-1. 完成 Lesson 2: 学习实体关系抽取
-2. 实践知识图谱构建流程
-3. 掌握图可视化技术
+### Intermediate Path: Knowledge Engineering
+1. Complete Lesson 2: Learn entity-relation extraction
+2. Practice knowledge graph construction workflow
+3. Master graph visualization techniques
 
-### 高级路径：智能查询
-1. 完成 Lesson 3: 学习 NL2SQL 实现
-2. 实践业务场景适配
-3. 掌握查询优化和安全控制
+### Advanced Path: Intelligent Querying
+1. Complete Lesson 3: Learn NL2SQL implementation
+2. Practice business scenario adaptation
+3. Master query optimization and security control
 
 ---
 
-## 系统架构
+## System Architecture
 
-### RAG 系统架构
+### RAG System Architecture
 
 ```mermaid
 graph TD
-    A[文档语料库] --> B[文本分块]
-    B --> C[向量编码]
-    C --> D[语义检索]
-    D --> E[神经网络重排序]
-    E --> F[上下文生成]
+    A[Document Corpus] --> B[Text Chunking]
+    B --> C[Vector Encoding]
+    C --> D[Semantic Retrieval]
+    D --> E[Neural Reranking]
+    E --> F[Context Generation]
     
     B --> B1[RecursiveCharacterTextSplitter<br/>chunk_size=1000, overlap=200]
-    C --> C1[BGE-M3 嵌入<br/>Dense + Sparse + ColBERT]
-    D --> D1[余弦相似度搜索<br/>Top-K 候选]
-    E --> E1[BGE-reranker-v2-m3<br/>交叉注意力评分]
-    F --> F1[Qwen-max LLM<br/>上下文感知生成]
+    C --> C1[BGE-M3 Embedding<br/>Dense + Sparse + ColBERT]
+    D --> D1[Cosine Similarity Search<br/>Top-K Candidates]
+    E --> E1[BGE-reranker-v2-m3<br/>Cross-attention Scoring]
+    F --> F1[Qwen-max LLM<br/>Context-aware Generation]
 ```
 
-### 知识图谱构建流程
+### Knowledge Graph Construction Flow
 
 ```mermaid
 graph LR
-    A[文本输入] --> B[候选抽取]
-    B --> C[模式优化]
-    C --> D[精炼重标注]
-    D --> E[角色分析]
-    E --> F[实体链接]
-    F --> G[图谱构建]
+    A[Text Input] --> B[Candidate Extraction]
+    B --> C[Schema Optimization]
+    C --> D[Refinement & Relabeling]
+    D --> E[Role Analysis]
+    E --> F[Entity Linking]
+    F --> G[Graph Construction]
     
-    E --> E1[思维链推理]
-    F --> F1[实体消歧]
-    G --> G1[交互式可视化]
+    E --> E1[Chain-of-Thought Reasoning]
+    F --> F1[Entity Disambiguation]
+    G --> G1[Interactive Visualization]
 ```
 
 ---
 
-## 核心概念
+## Core Concepts
 
-### 1. 检索增强生成 (RAG)
+### 1. Retrieval-Augmented Generation (RAG)
 
-**核心思想**: 结合外部知识库和大语言模型，提供事实准确、可追溯来源的答案。
+**Core Idea**: Combine external knowledge bases with large language models to provide factually accurate, traceable answers.
 
-**关键组件**:
-- **文档处理**: 智能文本分块，保持语义完整性
-- **向量检索**: 多粒度嵌入表示，提高召回率
-- **神经重排序**: 交叉注意力机制，优化排序精度
-- **上下文生成**: 基于检索文档生成答案
+**Key Components**:
+- **Document Processing**: Intelligent text chunking, maintaining semantic integrity
+- **Vector Retrieval**: Multi-granular embedding representations, improving recall
+- **Neural Reranking**: Cross-attention mechanisms, optimizing ranking precision
+- **Context Generation**: Generate answers based on retrieved documents
 
-### 2. 知识图谱
+### 2. Knowledge Graphs
 
-**核心思想**: 将非结构化文本转换为结构化知识表示，支持复杂推理和查询。
+**Core Idea**: Convert unstructured text into structured knowledge representations, supporting complex reasoning and queries.
 
-**关键技术**:
-- **实体识别**: 识别文本中的关键实体
-- **关系抽取**: 抽取实体间的语义关系
-- **模式优化**: 自动化本体设计和规范化
-- **实体链接**: 消歧和合并同义实体
+**Key Technologies**:
+- **Entity Recognition**: Identify key entities in text
+- **Relation Extraction**: Extract semantic relationships between entities
+- **Schema Optimization**: Automated ontology design and normalization
+- **Entity Linking**: Disambiguation and merging of synonymous entities
 
-### 3. 自然语言转 SQL
+### 3. Natural Language to SQL
 
-**核心思想**: 将自然语言问题转换为结构化数据库查询，降低数据访问门槛。
+**Core Idea**: Convert natural language questions into structured database queries, lowering the barrier to data access.
 
-**关键能力**:
-- **意图理解**: 准确识别查询意图
-- **模式映射**: 将自然语言映射到数据库模式
-- **SQL 生成**: 生成语法正确、语义准确的 SQL
-- **安全控制**: 防止 SQL 注入和越权访问
+**Key Capabilities**:
+- **Intent Understanding**: Accurately identify query intent
+- **Schema Mapping**: Map natural language to database schemas
+- **SQL Generation**: Generate syntactically correct and semantically accurate SQL
+- **Security Control**: Prevent SQL injection and unauthorized access
 
 ---
 
-## 技术亮点
+## Technical Highlights
 
-### BGE-M3 多粒度嵌入
+### BGE-M3 Multi-Granular Embeddings
 
-**三种表示方式**:
-1. **Dense Vector**: 密集向量表示，适合语义相似度
-2. **Sparse Vector**: 稀疏向量表示，保留词汇特征
-3. **ColBERT**: 多向量表示，平衡精度和效率
+**Three Representation Methods**:
+1. **Dense Vector**: Dense vector representation, suitable for semantic similarity
+2. **Sparse Vector**: Sparse vector representation, preserving lexical features
+3. **ColBERT**: Multi-vector representation, balancing precision and efficiency
 
-**优势**:
-- 跨语言语义理解
-- 多种检索策略融合
-- 生产环境验证的性能
+**Advantages**:
+- Cross-lingual semantic understanding
+- Fusion of multiple retrieval strategies
+- Production-validated performance
 
-### 思维链推理
+### Chain-of-Thought Reasoning
 
-**应用场景**:
-- 复杂实体关系推理
-- 多步骤知识抽取
-- 歧义消解决策
+**Application Scenarios**:
+- Complex entity-relation reasoning
+- Multi-step knowledge extraction
+- Ambiguity resolution decisions
 
-**实现方式**:
+**Implementation**:
 ```python
-# 思维链 prompt 示例
+# Chain-of-thought prompt example
 prompt = """
-让我们逐步分析这个文档：
-1. 首先识别所有可能的实体
-2. 然后分析它们之间的关系
-3. 最后确定每个实体的属性
+Let's analyze this document step by step:
+1. First identify all possible entities
+2. Then analyze their relationships
+3. Finally determine attributes of each entity
 
-文档内容: {text}
+Document content: {text}
 """
 ```
 
 ---
 
-## 性能指标
+## Performance Metrics
 
-### RAG 系统指标
+### RAG System Metrics
 
-| 指标 | 目标值 | 说明 |
+| Metric | Target Value | Description |
 |:-----|:-------|:-----|
-| 检索精度 (P@5) | >85% | Top-5 结果相关性 |
-| 重排序提升 | +10-15% | 相比原始检索的提升 |
-| 端到端延迟 | <3s | 从查询到生成结果 |
-| 向量维度 | 1024 | BGE-M3 标准维度 |
+| Retrieval Precision (P@5) | >85% | Top-5 result relevance |
+| Reranking Improvement | +10-15% | Improvement over original retrieval |
+| End-to-End Latency | <3s | Query to result generation |
+| Vector Dimension | 1024 | BGE-M3 standard dimension |
 
-### 知识图谱指标
+### Knowledge Graph Metrics
 
-| 指标 | 目标值 | 说明 |
+| Metric | Target Value | Description |
 |:-----|:-------|:-----|
-| 实体识别 F1 | >90% | 实体识别准确率 |
-| 关系抽取精度 | >85% | 关系三元组准确率 |
-| 实体链接准确率 | >80% | 实体消歧正确率 |
-| 构建时间 | <5min | 单文档处理时间 |
+| Entity Recognition F1 | >90% | Entity recognition accuracy |
+| Relation Extraction Precision | >85% | Relation triple accuracy |
+| Entity Linking Accuracy | >80% | Entity disambiguation correctness |
+| Construction Time | <5min | Single document processing time |
 
 ---
 
-## 最佳实践
+## Best Practices
 
-### 文档分块策略
+### Document Chunking Strategy
 
 ```python
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-# 推荐配置
+# Recommended configuration
 splitter = RecursiveCharacterTextSplitter(
-    chunk_size=1000,        # 每块大小
-    chunk_overlap=200,       # 重叠区域
-    separators=["\n\n", "\n", "。", "，", " "],  # 分隔符优先级
+    chunk_size=1000,        # Chunk size
+    chunk_overlap=200,       # Overlap region
+    separators=["\n\n", "\n", ".", ",", " "],  # Separator priority
     length_function=len
 )
 ```
 
-### 检索参数调优
+### Retrieval Parameter Tuning
 
-- **Top-K**: 初始检索建议 20-50
-- **重排序 Top-N**: 精排建议 3-5
-- **相似度阈值**: 根据业务场景调整
-- **批量大小**: 平衡内存和速度
+- **Top-K**: Initial retrieval recommended 20-50
+- **Reranking Top-N**: Fine-ranking recommended 3-5
+- **Similarity Threshold**: Adjust based on business scenarios
+- **Batch Size**: Balance memory and speed
 
-### 知识图谱优化
+### Knowledge Graph Optimization
 
-- **实体规范化**: 统一命名规范
-- **关系类型控制**: 限制关系类型数量
-- **属性筛选**: 保留核心属性
-- **图谱剪枝**: 移除低置信度节点
-
----
-
-## 常见问题
-
-### RAG 系统
-
-**Q: 检索结果不相关怎么办？**
-
-A: 检查以下方面：
-1. 文档分块是否合理
-2. 查询是否需要改写
-3. 是否需要调整 Top-K
-4. 考虑使用查询扩展
-
-**Q: 生成答案出现幻觉？**
-
-A: 改进方向：
-1. 增加上下文约束
-2. 使用更严格的 prompt
-3. 启用引用机制
-4. 降低模型温度参数
-
-### 知识图谱
-
-**Q: 实体识别准确率低？**
-
-A: 优化策略：
-1. 使用更好的实体识别 prompt
-2. 增加领域示例
-3. 启用思维链推理
-4. 后处理规则补充
-
-**Q: 关系抽取噪声多？**
-
-A: 解决方案：
-1. 限制关系类型
-2. 增加置信度阈值
-3. 使用关系模板
-4. 人工审核反馈
+- **Entity Normalization**: Unified naming conventions
+- **Relation Type Control**: Limit number of relation types
+- **Attribute Filtering**: Retain core attributes
+- **Graph Pruning**: Remove low-confidence nodes
 
 ---
 
-## 实战项目
+## Common Questions
 
-### 项目 1: 企业文档问答系统
+### RAG Systems
 
-**功能**:
-- 上传企业内部文档
-- 智能语义检索
-- 准确答案生成
-- 来源可追溯
+**Q: What if retrieval results are irrelevant?**
 
-**技术栈**: RAG + BGE-M3 + Qwen
+A: Check the following aspects:
+1. Whether document chunking is reasonable
+2. Whether queries need rewriting
+3. Whether Top-K needs adjustment
+4. Consider using query expansion
 
-### 项目 2: 行业知识图谱
+**Q: Generated answers contain hallucinations?**
 
-**功能**:
-- 自动化实体关系抽取
-- 知识图谱可视化
-- 图谱查询接口
-- 持续更新机制
+A: Improvement directions:
+1. Increase context constraints
+2. Use stricter prompts
+3. Enable citation mechanisms
+4. Lower model temperature parameter
 
-**技术栈**: LLM + NetworkX + Pyvis
+### Knowledge Graphs
 
-### 项目 3: BI 智能助手
+**Q: Low entity recognition accuracy?**
 
-**功能**:
-- 自然语言查询数据
-- 自动生成 SQL
-- 结果可视化
-- 查询历史管理
+A: Optimization strategies:
+1. Use better entity recognition prompts
+2. Add domain examples
+3. Enable chain-of-thought reasoning
+4. Post-processing rule supplementation
 
-**技术栈**: NL2SQL + SQLite + Gradio
+**Q: Too much noise in relation extraction?**
+
+A: Solutions:
+1. Limit relation types
+2. Increase confidence thresholds
+3. Use relation templates
+4. Manual review feedback
 
 ---
 
-## 扩展阅读
+## Practical Projects
 
-### 学术论文
+### Project 1: Enterprise Document Q&A System
+
+**Features**:
+- Upload internal enterprise documents
+- Intelligent semantic retrieval
+- Accurate answer generation
+- Traceable sources
+
+**Tech Stack**: RAG + BGE-M3 + Qwen
+
+### Project 2: Industry Knowledge Graph
+
+**Features**:
+- Automated entity-relation extraction
+- Knowledge graph visualization
+- Graph query interface
+- Continuous update mechanism
+
+**Tech Stack**: LLM + NetworkX + Pyvis
+
+### Project 3: BI Intelligent Assistant
+
+**Features**:
+- Natural language data queries
+- Automatic SQL generation
+- Result visualization
+- Query history management
+
+**Tech Stack**: NL2SQL + SQLite + Gradio
+
+---
+
+## Extended Reading
+
+### Academic Papers
 
 - [RAG: Retrieval-Augmented Generation (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401)
 - [GraphRAG (Edge et al., 2024)](https://arxiv.org/abs/2404.16130)
 - [BGE M3-Embedding (Chen et al., 2024)](https://arxiv.org/abs/2402.03216)
 - [RAG vs Fine-tuning (Ovadia et al., 2024)](https://arxiv.org/abs/2401.08406)
 
-### 技术博客
+### Technical Blogs
 
-- [LangChain 文档处理最佳实践](https://python.langchain.com/docs/modules/data_connection/)
-- [FAISS 向量检索指南](https://github.com/facebookresearch/faiss/wiki)
-- [知识图谱构建工具对比](https://github.com/topics/knowledge-graph)
+- [LangChain Document Processing Best Practices](https://python.langchain.com/docs/modules/data_connection/)
+- [FAISS Vector Retrieval Guide](https://github.com/facebookresearch/faiss/wiki)
+- [Knowledge Graph Construction Tool Comparison](https://github.com/topics/knowledge-graph)
 
 ---
 
-## 下一步
+## Next Steps
 
-完成本章学习后，建议：
+After completing this chapter, we recommend:
 
-1. **实践项目**: 选择一个实战项目深入实现
-2. **性能优化**: 针对特定场景进行调优
-3. **继续学习**: 进入 Chapter 4 学习上下文工程
-4. **社区交流**: 在 GitHub 讨论区分享经验
+1. **Practical Projects**: Choose a practical project for deep implementation
+2. **Performance Optimization**: Optimize for specific scenarios
+3. **Continue Learning**: Proceed to Chapter 4 to learn Context Engineering
+4. **Community Exchange**: Share experiences in GitHub discussions
 
 {: .note }
-> 💡 **提示**: 本章技术在企业级应用中广泛使用。建议结合实际业务场景进行学习和实践。
-
+> 💡 **Tip**: The technologies in this chapter are widely used in enterprise applications. We recommend learning and practicing in combination with actual business scenarios.

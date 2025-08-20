@@ -83,8 +83,8 @@ python alpaca_constructor.py \
 ### Example with input
 ```json
 {
-  "instruction": "将以下文本翻译成英文",
-  "input": "人工智能正在改变我们的世界",
+  "instruction": "Translate the following text to English",
+  "input": "Artificial intelligence is changing our world",
   "output": "Artificial intelligence is changing our world"
 }
 ```

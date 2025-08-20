@@ -135,7 +135,7 @@ embeddings = classifier.generate_embeddings(texts)
 ### Predicting New Text
 ```python
 # Predict single text
-texts = ["这部电影真的很棒！", "剧情太无聊了"]
+texts = ["This movie is really great!", "The plot is too boring"]
 predictions, probabilities = classifier.predict(texts)
 
 for text, pred, prob in zip(texts, predictions, probabilities):
