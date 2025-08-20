@@ -1,0 +1,6 @@
+autogen-agentchat>=0.2.0
+openai>=1.0.0
+dashscope>=1.17.0
+pymemgpt>=0.3.0
+numpy>=1.24.0
+python-dotenv>=1.0.0

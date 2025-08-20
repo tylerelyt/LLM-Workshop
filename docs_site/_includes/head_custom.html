@@ -1,0 +1,39 @@
+<!-- Mermaid.js -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  // Initialize mermaid with explicit configuration
+  mermaid.initialize({ 
+    startOnLoad: false,
+    theme: 'default',
+    securityLevel: 'loose'
+  });
+  
+  // Function to render mermaid diagrams
+  function renderMermaid() {
+    try {
+      mermaid.run({
+        querySelector: '.mermaid',
+        suppressErrors: false
+      });
+      console.log('Mermaid diagrams rendered successfully');
+    } catch (error) {
+      console.error('Mermaid rendering error:', error);
+    }
+  }
+  
+  // Wait for DOM to be fully loaded
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderMermaid);
+  } else {
+    // DOM is already loaded
+    renderMermaid();
+  }
+</script>
+
+<!-- Custom meta tags -->
+<meta name="keywords" content="LLM, Large Language Model, AI, Machine Learning, NLP, RAG, Knowledge Graph, Multi-Agent, Fine-tuning">
+<meta name="author" content="LLM-Workshop">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
+
