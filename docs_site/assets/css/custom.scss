@@ -1,0 +1,155 @@
+---
+---
+
+// Custom styles for LLM-Workshop
+
+// Improved code blocks
+.highlight {
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+// Enhanced buttons
+.btn {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+}
+
+// Improved labels
+.label {
+  font-weight: 600;
+  padding: 0.25em 0.6em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+// Better table styling
+table {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  
+  thead th {
+    background-color: #f6f8fa;
+    font-weight: 600;
+  }
+  
+  tr:hover {
+    background-color: #f6f8fa;
+  }
+}
+
+// Enhanced note/warning boxes
+.note, .warning, .important {
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.note {
+  background-color: #e7f2fa;
+  border-left-color: #2196F3;
+}
+
+.warning {
+  background-color: #fff4e5;
+  border-left-color: #ff9800;
+}
+
+.important {
+  background-color: #fce4ec;
+  border-left-color: #e91e63;
+}
+
+// Hero section on homepage
+.fs-9 {
+  font-size: 2.5rem !important;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+// Improved code example blocks
+.code-example {
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+}
+
+// Add smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// Improved link styling
+a {
+  transition: color 0.2s ease;
+}
+
+// Better spacing for lists
+li {
+  margin-bottom: 0.5rem;
+}
+
+// Enhanced headings
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+// Improved horizontal rules
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 2px solid #e1e4e8;
+}
+
+// Mermaid diagram styling
+.mermaid, .language-mermaid, pre.mermaid {
+  text-align: center;
+  margin: 2rem 0;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  padding: 1.5rem;
+  border: 1px solid #e1e4e8;
+  
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Ensure pre.mermaid displays properly
+pre.mermaid {
+  overflow-x: auto;
+  white-space: pre;
+  font-family: monospace;
+  
+  code {
+    background: none;
+    border: none;
+    padding: 0;
+  }
+}
+
+// Hide raw mermaid code blocks
+pre.language-mermaid {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  
+  code {
+    display: none;
+  }
+}
+

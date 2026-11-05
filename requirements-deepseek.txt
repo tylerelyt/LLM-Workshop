@@ -1,0 +1,4 @@
+openai>=2,<3
+mcp==2.3.0
+fastembed==0.7.4
+typer>=0.16,<1

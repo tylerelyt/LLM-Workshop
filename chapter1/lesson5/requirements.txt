@@ -1,0 +1,38 @@
+# Lesson 5: Reasoning Optimization  
+# Dependencies for optimized reasoning and inference patterns
+
+# Core LLM Processing with Optimization
+transformers>=4.30.0
+torch>=2.0.0
+accelerate>=0.20.0
+bitsandbytes>=0.41.0  # Quantization
+
+# LLM APIs
+openai>=1.12.0
+dashscope>=1.17.0
+
+# Reasoning Frameworks
+langchain>=0.3.0
+guidance>=0.1.0
+
+# Mathematical and Logical Reasoning
+sympy>=1.12
+z3-solver>=4.12.0
+prolog>=0.1.0
+
+# Performance Optimization
+numba>=0.58.0
+cachetools>=5.3.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Monitoring and Profiling
+psutil>=5.9.0
+memory-profiler>=0.61.0
+
+# Utilities
+requests>=2.28.0
+python-dotenv>=1.0.0
+tqdm>=4.65.0 

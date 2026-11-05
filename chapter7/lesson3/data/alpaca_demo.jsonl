@@ -1,0 +1,3 @@
+{"instruction":"这段话表达了什么情感？判断情感倾向","input":"the plot is predictable and the acting is dull.","output":"负面"}
+{"instruction":"这段话表达了什么情感？判断情感倾向","input":"a masterpiece, a profoundly moving film.","output":"正面"}
+{"instruction":"分析以下文本的情感倾向","input":"boring and forgettable, waste of time.","output":"负面"}

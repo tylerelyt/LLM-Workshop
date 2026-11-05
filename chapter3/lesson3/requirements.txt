@@ -1,0 +1,50 @@
+# Lesson 12: Enterprise-Grade NL2SQL with Intelligent Rejection
+# Core dependencies for multi-table business analytics
+
+# LLM APIs and Language Processing
+openai>=1.12.0
+dashscope>=1.17.0
+transformers>=4.30.0
+
+# Database Operations
+sqlite3  # Built-in Python module
+sqlalchemy>=2.0.0
+pandas>=2.0.0
+
+# Vector Search and Embeddings
+scikit-learn>=1.3.0
+numpy>=1.24.0
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.0
+
+# Data Analysis and Processing
+scipy>=1.10.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Text Processing and NLP
+nltk>=3.8.1
+regex>=2023.0.0
+
+# Document Processing (for schema documentation)
+langchain>=0.3.0
+pypdf>=3.0.0
+
+# Vector Storage
+chromadb>=0.5.0
+
+# Configuration and Utilities
+pyyaml>=6.0
+python-dotenv>=1.0.0
+requests>=2.28.0
+tqdm>=4.65.0
+
+# Performance and Optimization
+numba>=0.57.0
+cachetools>=5.3.0
+accelerate>=0.20.0
+
+# Web API (for enterprise deployment)
+fastapi>=0.100.0
+uvicorn>=0.20.0
+pydantic>=2.0.0 

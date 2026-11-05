@@ -1,0 +1,64 @@
+# Lesson 2: Tool Masking and Dynamic Behavior Control
+# Dependencies for tool masking strategies and state machine implementations
+
+# LLM APIs and Processing
+openai>=1.12.0
+anthropic>=0.21.0
+dashscope>=1.17.0
+transformers>=4.30.0
+torch>=2.0.0
+
+# Function Calling and Tool Management
+langchain>=0.3.0
+langchain-community>=0.3.0
+guidance>=0.1.0
+jsonschema>=4.19.0
+
+# MCP (Model Context Protocol) Support
+mcp-client>=0.1.0
+mcp-server>=0.1.0
+
+# State Machine Implementation
+python-statemachine>=2.1.0
+transitions>=0.9.0
+networkx>=3.1.0
+
+# Logits Processing and Token Control
+torch>=2.0.0
+accelerate>=0.21.0
+vllm>=0.2.0
+
+# Performance and Caching
+redis>=5.0.0
+cachetools>=5.3.0
+diskcache>=5.6.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+pydantic>=2.0.0
+
+# Async and Concurrency
+asyncio>=3.4.3
+aiohttp>=3.8.0
+concurrent-futures>=3.1.1
+
+# Configuration and Environment
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+toml>=0.10.0
+
+# Logging and Monitoring
+loguru>=0.7.0
+structlog>=23.1.0
+prometheus-client>=0.17.0
+
+# Testing and Validation
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+hypothesis>=6.82.0
+
+# Visualization and Debugging
+graphviz>=0.20.0
+matplotlib>=3.7.0
+rich>=13.4.0 

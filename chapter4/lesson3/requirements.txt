@@ -1,0 +1,80 @@
+# Lesson 3: Filesystem as Context and Externalized Memory
+# Dependencies for filesystem-based memory management and state externalization
+
+# LLM APIs and Processing
+openai>=1.12.0
+anthropic>=0.21.0
+dashscope>=1.17.0
+transformers>=4.30.0
+
+# State Space Models (Experimental)
+mamba-ssm>=1.2.0
+transformers>=4.30.0
+torch>=2.0.0
+
+# File System and Storage
+pathlib>=1.0.0
+watchdog>=3.0.0
+aiofiles>=23.1.0
+fsspec>=2023.6.0
+
+# Document Processing and Compression
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+pillow>=10.0.0
+
+# Web Content Processing
+requests>=2.31.0
+selenium>=4.11.0
+scrapy>=2.10.0
+trafilatura>=1.6.0
+
+# Compression and Serialization
+lz4>=4.3.0
+zstandard>=0.21.0
+pickle5>=0.0.12
+orjson>=3.9.0
+msgpack>=1.0.5
+
+# Database and Indexing
+sqlite3  # Built-in
+sqlalchemy>=2.0.0
+chromadb>=0.5.0
+faiss-cpu>=1.7.4
+
+# Memory Management
+psutil>=5.9.0
+memory-profiler>=0.61.0
+pympler>=0.9
+
+# Async and Concurrency
+asyncio>=3.4.3
+aiohttp>=3.8.0
+concurrent-futures>=3.1.1
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+pydantic>=2.0.0
+
+# Configuration and Environment
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+toml>=0.10.0
+
+# Logging and Monitoring
+loguru>=0.7.0
+structlog>=23.1.0
+rich>=13.4.0
+
+# Testing and Benchmarking
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.11.0
+
+# Utilities
+tqdm>=4.65.0
+click>=8.1.0
+typer>=0.9.0 

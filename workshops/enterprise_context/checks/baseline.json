@@ -1,0 +1,73 @@
+{
+  "sdk_sha256": "8e448052c03c456e34b9bc59f86d8ea34e47009566b55bb8fe0b69933966071d",
+  "global_search": {
+    "": {
+      "items": [
+        {
+          "page_id": "100",
+          "title": "项目知识平台设计",
+          "project_key": "atlas",
+          "version": 7,
+          "excerpt": "现有应用提供全局文档检索，其他调用者仍依赖这一行为。KNOW-201 要为 Atlas 项目增加按项目检索与文档变更订阅：搜索只列出该项目的文档；在已采用的项目文档出现新版本后，告"
+        },
+        {
+          "page_id": "101",
+          "title": "知识平台历史评审",
+          "project_key": "atlas",
+          "version": 3,
+          "excerpt": "历史评审已经采用：shared/wiki_sdk.py 同时被知识平台、文档归档和审计应用复用。本轮需求不包含修改公共 SDK，应用层可组合现有方法实现项目检索。旧 search("
+        },
+        {
+          "page_id": "102",
+          "title": "Wiki SDK 当前接口",
+          "project_key": "atlas",
+          "version": 4,
+          "excerpt": "WikiSDK(data_path) 的公共方法为 list_documents()、read_document(page_id)、list_changes(after, limi"
+        },
+        {
+          "page_id": "200",
+          "title": "项目知识平台设计",
+          "project_key": "borealis",
+          "version": 6,
+          "excerpt": "Borealis 项目的知识平台设计，名称与 Atlas 文档相同，但业务归属不同。Borealis 的检索与变更不能进入 Atlas 项目结果。"
+        }
+      ]
+    },
+    "检索": {
+      "items": [
+        {
+          "page_id": "100",
+          "title": "项目知识平台设计",
+          "project_key": "atlas",
+          "version": 7,
+          "excerpt": "现有应用提供全局文档检索，其他调用者仍依赖这一行为。KNOW-201 要为 Atlas 项目增加按项目检索与文档变更订阅：搜索只列出该项目的文档；在已采用的项目文档出现新版本后，告"
+        },
+        {
+          "page_id": "101",
+          "title": "知识平台历史评审",
+          "project_key": "atlas",
+          "version": 3,
+          "excerpt": "历史评审已经采用：shared/wiki_sdk.py 同时被知识平台、文档归档和审计应用复用。本轮需求不包含修改公共 SDK，应用层可组合现有方法实现项目检索。旧 search("
+        },
+        {
+          "page_id": "200",
+          "title": "项目知识平台设计",
+          "project_key": "borealis",
+          "version": 6,
+          "excerpt": "Borealis 项目的知识平台设计，名称与 Atlas 文档相同，但业务归属不同。Borealis 的检索与变更不能进入 Atlas 项目结果。"
+        }
+      ]
+    },
+    "Borealis": {
+      "items": [
+        {
+          "page_id": "200",
+          "title": "项目知识平台设计",
+          "project_key": "borealis",
+          "version": 6,
+          "excerpt": "Borealis 项目的知识平台设计，名称与 Atlas 文档相同，但业务归属不同。Borealis 的检索与变更不能进入 Atlas 项目结果。"
+        }
+      ]
+    }
+  }
+}

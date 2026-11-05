@@ -1,0 +1,142 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Machine Learning & Data
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.weights
+models/
+checkpoints/
+data/raw/
+data/processed/
+datasets/
+*.csv
+*.tsv
+*.parquet
+
+# LLM & API Keys
+.env.local
+.env.production
+*.key
+api_keys.txt
+secrets.json
+
+# 课程运行结果、索引与本机模型缓存
+workshops/**/results/
+workshops/**/runs/
+chapter9/**/results/
+
+# Knowledge Graph Files (Generated)
+chapter*/lesson*/knowledge_graph.json
+chapter*/lesson*/knowledge_graph_optimized.json
+chapter*/lesson*/entity_mapping.json
+chapter*/lesson*/mapping.json
+chapter*/lesson*/ontology_optimized.json
+
+# LLM Cache & Models
+llama_cache/
+*.bin
+*.safetensors
+*.gguf
+*.ggml
+
+# Logs & Debug
+*.log
+logs/
+debug/
+*.debug
+
+# Temporary & Cache
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Documentation
+docs/_build/
+site/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST *.db

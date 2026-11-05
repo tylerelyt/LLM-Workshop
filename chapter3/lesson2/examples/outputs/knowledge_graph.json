@@ -1,0 +1,92 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "Organization",
+      "description": "跨国科技公司，专注于消费电子产品、软件和在线服务",
+      "id": "苹果公司"
+    },
+    {
+      "type": "Person",
+      "description": "苹果公司CEO",
+      "职位": "CEO",
+      "情感状态": "满意",
+      "id": "蒂姆·库克"
+    },
+    {
+      "type": "Location",
+      "description": "苹果公司主要办公地点",
+      "id": "加州总部"
+    },
+    {
+      "type": "Product",
+      "description": "苹果公司最新发布的智能手机",
+      "特性": "革命性",
+      "性能": "卓越",
+      "摄影能力": "出色",
+      "id": "iPhone 15"
+    },
+    {
+      "type": "Product",
+      "description": "iPhone 15所采用的先进处理器",
+      "技术特性": "先进",
+      "id": "A17芯片"
+    },
+    {
+      "type": "Organization",
+      "description": "证券交易所，苹果公司股票在此上市",
+      "id": "纳斯达克交易所"
+    },
+    {
+      "type": "Concept",
+      "description": "苹果公司发展历程",
+      "id": "苹果历史"
+    }
+  ],
+  "links": [
+    {
+      "predicate": "发布",
+      "source": "苹果公司",
+      "target": "iPhone 15",
+      "key": 0
+    },
+    {
+      "predicate": "股价上涨",
+      "source": "苹果公司",
+      "target": "纳斯达克交易所",
+      "key": 0
+    },
+    {
+      "predicate": "担任",
+      "source": "蒂姆·库克",
+      "target": "苹果公司",
+      "key": 0
+    },
+    {
+      "predicate": "宣布",
+      "source": "蒂姆·库克",
+      "target": "iPhone 15",
+      "key": 0
+    },
+    {
+      "predicate": "位于",
+      "source": "蒂姆·库克",
+      "target": "加州总部",
+      "key": 0
+    },
+    {
+      "predicate": "评价",
+      "source": "蒂姆·库克",
+      "target": "苹果历史",
+      "key": 0
+    },
+    {
+      "predicate": "采用",
+      "source": "iPhone 15",
+      "target": "A17芯片",
+      "key": 0
+    }
+  ]
+}

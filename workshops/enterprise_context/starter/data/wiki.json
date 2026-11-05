@@ -1,0 +1,33 @@
+{
+  "documents": [
+    {
+      "page_id": "100",
+      "title": "项目知识平台设计",
+      "project_key": "atlas",
+      "version": 7,
+      "body": "现有应用提供全局文档检索，其他调用者仍依赖这一行为。KNOW-201 要为 Atlas 项目增加按项目检索与文档变更订阅：搜索只列出该项目的文档；在已采用的项目文档出现新版本后，告诉研发需要复核哪份依据。文档身份由 page_id 与 version 共同确定，标题可重复、项目归属可改变。既有 Wiki SDK 已能列出文档与读取业务变更事件。本轮只扩展应用层，不改共享 SDK；完成后旧全局检索仍能使用。"
+    },
+    {
+      "page_id": "101",
+      "title": "知识平台历史评审",
+      "project_key": "atlas",
+      "version": 3,
+      "body": "历史评审已经采用：shared/wiki_sdk.py 同时被知识平台、文档归档和审计应用复用。本轮需求不包含修改公共 SDK，应用层可组合现有方法实现项目检索。旧 search(query) 的响应字段与全局范围应保持兼容。读取历史决定时保留 page_id=101、version=3，不能把尚未采用的提议当作已确认要求。"
+    },
+    {
+      "page_id": "102",
+      "title": "Wiki SDK 当前接口",
+      "project_key": "atlas",
+      "version": 4,
+      "body": "WikiSDK(data_path) 的公共方法为 list_documents()、read_document(page_id)、list_changes(after, limit=100)。文档字段为 page_id、title、project_key、version、body。list_changes 返回 events、next_cursor、has_more；事件有 seq、event_id、page_id、old_project_key、project_key、version。同一 event_id 可能重复投递；应用须保存已处理位置。文档迁出订阅项目时，原项目仍需复核并移除原来的依据。这里的订阅是 Wiki 业务事件的读取与处理，不是 MCP resources subscription。项目归属与正文版本独立变化：正文版本不增加时迁出项目，仍要撤出旧依据；迁回项目时，仍要重新纳入。"
+    },
+    {
+      "page_id": "200",
+      "title": "项目知识平台设计",
+      "project_key": "borealis",
+      "version": 6,
+      "body": "Borealis 项目的知识平台设计，名称与 Atlas 文档相同，但业务归属不同。Borealis 的检索与变更不能进入 Atlas 项目结果。"
+    }
+  ],
+  "events": []
+}

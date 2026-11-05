@@ -1,0 +1,77 @@
+# Lesson 4: Attention Recitation and Goal Focus Management
+# Dependencies for attention manipulation and goal tracking systems
+
+# LLM APIs and Processing
+openai>=1.12.0
+anthropic>=0.21.0
+dashscope>=1.17.0
+transformers>=4.30.0
+torch>=2.0.0
+
+# Attention Analysis and Visualization
+attention-viz>=0.2.0
+bertviz>=1.4.0
+captum>=0.6.0
+
+# Natural Language Processing
+spacy>=3.6.0
+nltk>=3.8.0
+textstat>=0.7.0
+sentence-transformers>=2.2.0
+
+# Task Planning and Management
+networkx>=3.1.0
+pydot>=1.4.0
+graphviz>=0.20.0
+
+# Progress Tracking and Visualization
+rich>=13.4.0
+tqdm>=4.65.0
+matplotlib>=3.7.0
+plotly>=5.15.0
+
+# File Monitoring and Management
+watchdog>=3.0.0
+pathlib>=1.0.0
+aiofiles>=23.1.0
+
+# Data Processing and Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+pydantic>=2.0.0
+
+# Configuration and State Management
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+toml>=0.10.0
+dataclasses-json>=0.5.9
+
+# Async Programming
+asyncio>=3.4.3
+aiohttp>=3.8.0
+asyncio-mqtt>=0.13.0
+
+# Logging and Monitoring
+loguru>=0.7.0
+structlog>=23.1.0
+prometheus-client>=0.17.0
+
+# Time and Scheduling
+schedule>=1.2.0
+python-dateutil>=2.8.0
+pendulum>=2.1.0
+
+# Testing and Validation
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+hypothesis>=6.82.0
+
+# Markdown and Documentation
+markdown>=3.4.0
+mistune>=3.0.0
+python-markdown>=3.4.0
+
+# CLI and User Interface
+click>=8.1.0
+typer>=0.9.0
+inquirer>=3.1.0 

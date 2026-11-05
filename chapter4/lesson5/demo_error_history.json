@@ -1,0 +1,160 @@
+{
+  "error_history": [
+    {
+      "error_type": "environment",
+      "error_code": "FileNotFoundError",
+      "message": "No such file or directory: '/nonexistent/file.txt'",
+      "action": {
+        "tool": "file_read",
+        "parameters": {
+          "path": "/nonexistent/file.txt"
+        },
+        "timestamp": "2025-08-18T18:24:13.664863"
+      },
+      "context": {
+        "operation": "read_config",
+        "user": "demo"
+      },
+      "stack_trace": null,
+      "timestamp": "2025-08-18T18:24:13.664871",
+      "recovery_attempts": [
+        {
+          "strategy": "alternative",
+          "action": {
+            "tool": "file_exists",
+            "parameters": {
+              "path": "/nonexistent/file.txt"
+            },
+            "timestamp": "2025-08-18T18:24:13.665287"
+          },
+          "success": true,
+          "timestamp": "2025-08-18T18:24:13.665296",
+          "notes": "Switched to checking file existence first"
+        }
+      ],
+      "resolved": true
+    },
+    {
+      "error_type": "environment",
+      "error_code": "RateLimitExceeded",
+      "message": "Rate limit exceeded. Retry after 60 seconds.",
+      "action": {
+        "tool": "api_call",
+        "parameters": {
+          "endpoint": "/users",
+          "method": "GET"
+        },
+        "timestamp": "2025-08-18T18:24:13.665535"
+      },
+      "context": {
+        "api_version": "v1",
+        "user_id": "12345"
+      },
+      "stack_trace": null,
+      "timestamp": "2025-08-18T18:24:13.665538",
+      "recovery_attempts": [
+        {
+          "strategy": "wait_retry",
+          "action": {
+            "tool": "wait",
+            "parameters": {
+              "duration": 60
+            },
+            "timestamp": "2025-08-18T18:24:13.665705"
+          },
+          "success": true,
+          "timestamp": "2025-08-18T18:24:13.665707",
+          "notes": "Applied exponential backoff strategy"
+        }
+      ],
+      "resolved": true
+    },
+    {
+      "error_type": "logic",
+      "error_code": "ZeroDivisionError",
+      "message": "division by zero",
+      "action": {
+        "tool": "calculator",
+        "parameters": {
+          "operation": "divide",
+          "a": 10,
+          "b": 0
+        },
+        "timestamp": "2025-08-18T18:24:13.665855"
+      },
+      "context": {
+        "calculation_type": "ratio_analysis"
+      },
+      "stack_trace": null,
+      "timestamp": "2025-08-18T18:24:13.665856",
+      "recovery_attempts": [
+        {
+          "strategy": "alternative",
+          "action": {
+            "tool": "validate_params",
+            "parameters": {
+              "operation": "divide",
+              "a": 10,
+              "b": 1
+            },
+            "timestamp": "2025-08-18T18:24:13.666012"
+          },
+          "success": true,
+          "timestamp": "2025-08-18T18:24:13.666013",
+          "notes": "Added parameter validation before calculation"
+        }
+      ],
+      "resolved": true
+    },
+    {
+      "error_type": "semantic",
+      "error_code": "TaskMismatchError",
+      "message": "Generated detailed analysis instead of brief summary",
+      "action": {
+        "tool": "text_summarize",
+        "parameters": {
+          "text": "long article...",
+          "max_length": 50
+        },
+        "timestamp": "2025-08-18T18:24:13.666187"
+      },
+      "context": {
+        "expected_type": "summary",
+        "actual_type": "analysis"
+      },
+      "stack_trace": null,
+      "timestamp": "2025-08-18T18:24:13.666188",
+      "recovery_attempts": [
+        {
+          "strategy": "retry",
+          "action": {
+            "tool": "text_summarize",
+            "parameters": {
+              "text": "long article...",
+              "max_length": 50,
+              "style": "bullet_points"
+            },
+            "timestamp": "2025-08-18T18:24:13.666378"
+          },
+          "success": true,
+          "timestamp": "2025-08-18T18:24:13.666379",
+          "notes": "Enhanced prompt with explicit format requirements"
+        }
+      ],
+      "resolved": true
+    }
+  ],
+  "success_patterns": {
+    "file_read:alternative": 1,
+    "api_call:wait_retry": 1,
+    "calculator:alternative": 1,
+    "text_summarize:retry": 1
+  },
+  "failure_patterns": {
+    "file_read:environment": 1,
+    "api_call:environment": 1,
+    "calculator:logic": 1,
+    "text_summarize:semantic": 1
+  },
+  "last_updated": "2025-08-18T18:24:13.666481"
+}
