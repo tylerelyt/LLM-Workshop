@@ -56,7 +56,7 @@ def get_weather_data(city_code, forecast=False):
 # 封装API请求逻辑
 def fetch_data(url, params):
     try:
-        res = requests.get(url=url, params=params)
+        res = requests.get(url=url, params=params, timeout=30)
         data = res.json()
         if data.get('status') == '1':
             return data
