@@ -1,0 +1,5 @@
+{"instruction":"请将一段技术博客文章压缩为不超过150字的摘要","is_classification":false}
+{"instruction":"将一段中文法律条文翻译成通俗易懂的口语化表达","is_classification":false}
+{"instruction":"解释HTTP状态码403与404的区别，并举例说明使用场景","is_classification":false}
+{"instruction":"编写SQL查询：从订单表orders中统计每个用户的订单总数与总金额","is_classification":false}
+{"instruction":"根据一段Python异常日志，指出可能出错的代码行并提出修复建议","is_classification":false}

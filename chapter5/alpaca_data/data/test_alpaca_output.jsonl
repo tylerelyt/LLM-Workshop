@@ -1,0 +1,10 @@
+{"instruction":"这段话表达了什么情感？判断情感倾向","input":"the plot is predictable and the acting is dull.","output":"负面"}
+{"instruction":"这段话表达了什么情感？判断情感倾向","input":"a masterpiece, a profoundly moving film.","output":"正面"}
+{"instruction":"请识别文本的情感极性","input":"boring and forgettable, waste of time.","output":"负面"}
+{"instruction":"判断下面这句话表达的是积极情绪还是消极情绪？","input":"absolutely brilliant, loved every minute of it!","output":"正面"}
+{"instruction":"分析以下文本的情感倾向","input":"terrible dialogue and poor direction.","output":"负面"}
+{"instruction":"这段话表达了什么情感？判断情感倾向","input":"stunning visuals and compelling storyline.","output":"正面"}
+{"instruction":"判断下面这句话表达的是积极情绪还是消极情绪？","input":"not worth watching, very disappointing.","output":"负面"}
+{"instruction":"分析以下文本的情感倾向","input":"excellent performances by all actors.","output":"正面"}
+{"instruction":"请识别文本的情感极性","input":"confusing plot and weak character development.","output":"负面"}
+{"instruction":"判断下面这句话表达的是积极情绪还是消极情绪？","input":"a delightful and entertaining experience.","output":"正面"}

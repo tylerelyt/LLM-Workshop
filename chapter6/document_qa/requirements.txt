@@ -1,0 +1,2 @@
+openai>=2,<3
+pypdf>=3

@@ -1,0 +1,7 @@
+[
+  {"question":"给知识平台新增项目检索和订阅时，本轮应该修改共享 Wiki SDK 吗？","evidence":["project-search","shared-sdk"]},
+  {"question":"页面正文未变，但从项目甲迁到项目乙，原项目和新项目分别应收到什么通知？","evidence":["migration-events","regression"]},
+  {"question":"项目迁移通知和旧版全局文档订阅的触发条件是一样的吗？","evidence":["migration-events","old-subscription"]},
+  {"question":"为什么加入重排之后，仍可能找不到回答问题所需的资料？","evidence":["indexing","reranking"]},
+  {"question":"人类没有选择的候选答案，能直接当成错误样本用于训练吗？","evidence":["feedback"]}
+]

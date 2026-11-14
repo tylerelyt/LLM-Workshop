@@ -1,0 +1,8 @@
+{
+  "name": "llm-workshop-feishu-skill",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.19.0" },
+  "scripts": { "lab": "node pi_probe.mjs" },
+  "dependencies": { "@earendil-works/pi-coding-agent": "1.5.1" }
+}

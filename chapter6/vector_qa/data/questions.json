@@ -1,0 +1,53 @@
+[
+  {
+    "id": "obligations",
+    "question": "合同中的主要义务是什么？",
+    "expected_document_ids": [
+      "doc2"
+    ],
+    "expected_abstention": false,
+    "reference_answer": "付款、商品交付、相关服务提供；需要引用支持这些义务的原文。"
+  },
+  {
+    "id": "termination",
+    "question": "哪些情况下合同可能解除？",
+    "expected_document_ids": [
+      "doc3"
+    ],
+    "expected_abstention": false,
+    "reference_answer": "双方同意，或法律规定的特殊情况，如违约、不可抗力。"
+  },
+  {
+    "id": "breach",
+    "question": "违约可能承担哪些责任？",
+    "expected_document_ids": [
+      "doc4"
+    ],
+    "expected_abstention": false,
+    "reference_answer": "赔偿损失、继续履行合同。"
+  },
+  {
+    "id": "combined",
+    "question": "请分别说明履约的主要义务和发生争议时的解决途径。",
+    "expected_document_ids": [
+      "doc2",
+      "doc7"
+    ],
+    "expected_abstention": false,
+    "reference_answer": "付款、交付、服务；争议可通过调解、仲裁或诉讼解决。两部分都需要原文依据。"
+  },
+  {
+    "id": "unavailable-phone",
+    "question": "合同审批人的手机号码是什么？",
+    "expected_document_ids": [],
+    "expected_abstention": true,
+    "reference_answer": "资料未提供审批人的手机号码，不能猜测。"
+  },
+  {
+    "id": "unavailable-date",
+    "question": "这份合同是哪一天签署的？",
+    "expected_document_ids": [],
+    "expected_abstention": true,
+    "reference_answer": "资料没有具体签署日期，不能将一般生效条件当作日期。"
+  }
+]

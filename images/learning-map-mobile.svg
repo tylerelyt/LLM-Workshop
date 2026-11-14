@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="570" viewBox="0 0 600 570" role="img" aria-labelledby="title desc">
+  <title id="title">模型与系统的学习地图</title>
+  <desc id="desc">Model：预训练与表示、后训练和接口。Harness：上下文与知识、推理与规划、工具与协议、状态与反馈。应用：知识问答、结构化查询、工具应用与 Agent。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#94a3b8" stroke-width="1.3"/></marker>
+    <style>text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}.title{font-size:30px;font-weight:650}.body{font-size:24px;fill:#26364c}.small{font-size:20px;fill:#526176}.label{font-size:24px;font-weight:600;fill:#26364c}</style>
+  </defs>
+  <rect x="1" y="1" width="598" height="568" rx="14" fill="#fff" stroke="#e2e8f0"/>
+  <rect x="16" y="16" width="568" height="174" rx="11" fill="#f4f7ff" stroke="#d6e1f5"/>
+  <text x="40" y="55" class="title" fill="#254db6">Model</text>
+  <text x="40" y="94" class="body">预训练与表示学习</text>
+  <text x="40" y="128" class="body">指令、偏好与任务适配</text>
+  <text x="40" y="162" font-size="22" fill="#26364c">Token · Completion / Chat · MaaS</text>
+  <path d="M300 194 V212" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="16" y="224" width="568" height="228" rx="11" fill="#f1f8f5" stroke="#d3e7dd"/>
+  <text x="40" y="266" class="title" fill="#24654c">Harness</text>
+  <text x="40" y="309" class="label">上下文与知识</text>
+  <text x="40" y="339" class="small">提示 · RAG · 文档 · 图谱</text>
+  <text x="330" y="309" class="label">推理与规划</text>
+  <text x="330" y="339" class="small">CoT · 自一致性 · 工作流</text>
+  <text x="40" y="394" class="label">工具与协议</text>
+  <text x="40" y="424" class="small">函数 · MCP · CLI · Skills</text>
+  <text x="330" y="394" class="label">状态与反馈</text>
+  <text x="330" y="424" class="small">Session · 记忆 · 恢复</text>
+  <path d="M300 456 V477" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="16" y="490" width="568" height="62" rx="9" fill="#172b45"/>
+  <text x="300" y="515" text-anchor="middle" font-size="22" fill="#fff">知识问答　 ·　 结构化查询</text>
+  <text x="300" y="541" text-anchor="middle" font-size="22" fill="#fff">工具应用　 ·　 Agent</text>
+</svg>

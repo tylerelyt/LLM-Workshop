@@ -1,0 +1,61 @@
+{"instruction": "将一段中文新闻压缩为不超过100字的要点摘要"}
+{"instruction": "把给定英文段落准确翻译成自然流畅的中文"}
+{"instruction": "解释二叉搜索树的性质并给出一个示例"}
+{"instruction": "根据表 users(id, name, age) 编写SQL查询：找出年龄大于30的用户姓名，按年龄降序"}
+{"instruction": "阅读一段Python报错堆栈并定位最可能的错误原因，给出修复建议"}
+{"instruction": "根据产品需求文档生成5条覆盖核心流程的测试用例"}
+{"instruction": "制定一个两周学习Docker与Kubernetes的分步计划"}
+{"instruction": "撰写一封正式的面试邀请邮件模板"}
+{"instruction": "根据描述编写匹配中国大陆手机号的正则表达式"}
+{"instruction": "判断一段评论是正面、负面或中性，并给出理由（分类任务）"}
+{"instruction": "从一段简历文本中抽取候选人的姓名、邮箱、技能列表（信息抽取）"}
+{"instruction": "将一段口语化表述改写为正式书面语"}
+{"instruction": "根据需求撰写一个电商商品详情页的介绍文案，突出卖点"}
+{"instruction": "对一个创业点子进行SWOT分析并给出结论"}
+{"instruction": "输出一个SaaS产品的商业计划书大纲（包含市场、产品、定价、渠道等）"}
+{"instruction": "为一个移动端Onboarding流程撰写简洁友好的UX文案"}
+{"instruction": "设计一个REST API：列出接口路径、方法、请求参数与返回JSON示例"}
+{"instruction": "为一个用户配置对象编写JSON Schema，包含必填与类型约束"}
+{"instruction": "写一个简单的YAML配置示例，展示开发与生产环境差异"}
+{"instruction": "给出在Linux下统计代码行数的Shell命令并解释用法"}
+{"instruction": "整理常用Git分支操作命令与使用场景"}
+{"instruction": "为一个Python函数撰写清晰的Docstring（含参数、返回、示例）"}
+{"instruction": "为给定函数设计3个单元测试用例并说明断言点"}
+{"instruction": "对一段可读性较差的代码提出重构建议（命名、结构、注释）"}
+{"instruction": "提供优化Python循环性能的实用技巧与注意事项"}
+{"instruction": "列出数据清洗的常见步骤，并示例说明缺失值与异常值处理"}
+{"instruction": "总结5种常见的特征工程方法并说明适用场景"}
+{"instruction": "解释分类模型的常见评估指标（Accuracy、Precision、Recall、F1、AUC）"}
+{"instruction": "为一个任务设计高质量Prompt的原则与示例"}
+{"instruction": "用文字描述一个用户注册流程图的各节点与决策条件"}
+{"instruction": "构造3个少样本学习的Few-shot示例，帮助模型学会邮件分类"}
+{"instruction": "解答一个逻辑推理题：根据线索判断嫌疑人身份并给出推理过程"}
+{"instruction": "把一道应用题转化为方程求解，并给出最终数值答案"}
+{"instruction": "写一则不少于200字的短篇故事，主题是‘选择’"}
+{"instruction": "创作一首现代诗，表达对时间流逝的感受"}
+{"instruction": "给出一周的减脂饮食计划（含每日热量与营养比例）"}
+{"instruction": "制定一个4周徒手训练计划（每周3-4次，逐步进阶）"}
+{"instruction": "为三天两晚的城市旅行安排行程与费用估算"}
+{"instruction": "将一段法律条款用通俗语言总结要点与义务"}
+{"instruction": "列出一份隐私政策的关键条款要点（收集、用途、共享、保留、权利）"}
+{"instruction": "制定一个面向AI应用的伦理检查清单"}
+{"instruction": "对一个上线方案进行风险评估（影响、概率、缓解措施）"}
+{"instruction": "起草一个季度OKR（包含目标与可度量关键结果）"}
+{"instruction": "把一次项目例会记录整理为结构化纪要（决议、待办、负责人、截止时间）"}
+{"instruction": "将简历中的一段经历改写为更有冲击力的要点式描述"}
+{"instruction": "为数据分析岗准备10个结构化面试问题及理想答案要点"}
+{"instruction": "输出一个平台级路线图的里程碑拆解与时间表"}
+{"instruction": "分析一段异常日志与堆栈，定位瓶颈并提出监控指标"}
+{"instruction": "制定一套系统化的应用日志分级与采集策略"}
+{"instruction": "为一个服务编写Prometheus告警规则建议（含阈值）"}
+{"instruction": "编写一个简单的Dockerfile以构建Python应用镜像"}
+{"instruction": "给出一个Kubernetes Deployment与Service的最小可用Manifest"}
+{"instruction": "写一个Terraform片段在AWS上创建S3与IAM策略（示例）"}
+{"instruction": "写一段Ansible Playbook来部署Nginx（示例）"}
+{"instruction": "将一组原始数据整理为Markdown表格展示"}
+{"instruction": "描述CSV到JSON字段映射的转换规则并给出示例"}
+{"instruction": "优化一条SQL查询（包含索引建议与重写思路）"}
+{"instruction": "为一个查询场景推荐合适的索引策略并说明原因"}
+{"instruction": "设计一个文档型数据库的集合与字段结构（NoSQL Schema）"}
+{"instruction": "为高并发读场景设计缓存策略（键设计、过期、淘汰）"}
+{"instruction": "设计一次A/B测试方案（指标、样本量、实验周期、注意事项）"}

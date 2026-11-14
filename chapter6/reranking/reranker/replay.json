@@ -1,0 +1,203 @@
+{
+  "source": "2026-11-01 教学语料上的真实运行记录摘要",
+  "model": "deepseek-flash",
+  "embedding": "BAAI/bge-small-zh-v1.5",
+  "retrieve": 8,
+  "keep": 3,
+  "questions": [
+    {
+      "question": "给知识平台新增项目检索和订阅时，本轮应该修改共享 Wiki SDK 吗？",
+      "expected_evidence": [
+        "project-search",
+        "shared-sdk"
+      ],
+      "candidate_documents": [
+        "shared-sdk",
+        "project-search",
+        "old-subscription",
+        "feedback",
+        "migration-events",
+        "reranking",
+        "regression",
+        "indexing"
+      ],
+      "baseline": {
+        "documents": [
+          "shared-sdk",
+          "project-search",
+          "old-subscription"
+        ],
+        "metrics": {
+          "evidence_recall": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      },
+      "reranked": {
+        "documents": [
+          "shared-sdk",
+          "project-search",
+          "old-subscription"
+        ],
+        "metrics": {
+          "evidence_recall": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      }
+    },
+    {
+      "question": "页面正文未变，但从项目甲迁到项目乙，原项目和新项目分别应收到什么通知？",
+      "expected_evidence": [
+        "migration-events",
+        "regression"
+      ],
+      "candidate_documents": [
+        "migration-events",
+        "regression",
+        "old-subscription",
+        "project-search",
+        "reranking",
+        "feedback",
+        "shared-sdk",
+        "indexing"
+      ],
+      "baseline": {
+        "documents": [
+          "migration-events",
+          "regression",
+          "old-subscription"
+        ],
+        "metrics": {
+          "evidence_recall": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      },
+      "reranked": {
+        "documents": [
+          "migration-events",
+          "regression",
+          "old-subscription"
+        ],
+        "metrics": {
+          "evidence_recall": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      }
+    },
+    {
+      "question": "项目迁移通知和旧版全局文档订阅的触发条件是一样的吗？",
+      "expected_evidence": [
+        "migration-events",
+        "old-subscription"
+      ],
+      "candidate_documents": [
+        "old-subscription",
+        "migration-events",
+        "regression",
+        "project-search",
+        "indexing",
+        "feedback",
+        "reranking",
+        "shared-sdk"
+      ],
+      "baseline": {
+        "documents": [
+          "old-subscription",
+          "migration-events",
+          "regression"
+        ],
+        "metrics": {
+          "evidence_recall": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      },
+      "reranked": {
+        "documents": [
+          "migration-events",
+          "old-subscription",
+          "regression"
+        ],
+        "metrics": {
+          "evidence_recall": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      }
+    },
+    {
+      "question": "为什么加入重排之后，仍可能找不到回答问题所需的资料？",
+      "expected_evidence": [
+        "indexing",
+        "reranking"
+      ],
+      "candidate_documents": [
+        "regression",
+        "reranking",
+        "project-search",
+        "feedback",
+        "migration-events",
+        "old-subscription",
+        "indexing",
+        "shared-sdk"
+      ],
+      "baseline": {
+        "documents": [
+          "regression",
+          "reranking",
+          "project-search"
+        ],
+        "metrics": {
+          "evidence_recall": 0.5,
+          "reciprocal_rank": 0.5
+        }
+      },
+      "reranked": {
+        "documents": [
+          "reranking",
+          "indexing",
+          "project-search"
+        ],
+        "metrics": {
+          "evidence_recall": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      }
+    },
+    {
+      "question": "人类没有选择的候选答案，能直接当成错误样本用于训练吗？",
+      "expected_evidence": [
+        "feedback"
+      ],
+      "candidate_documents": [
+        "feedback",
+        "shared-sdk",
+        "reranking",
+        "migration-events",
+        "project-search",
+        "old-subscription",
+        "regression",
+        "indexing"
+      ],
+      "baseline": {
+        "documents": [
+          "feedback",
+          "shared-sdk",
+          "reranking"
+        ],
+        "metrics": {
+          "evidence_recall": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      },
+      "reranked": {
+        "documents": [
+          "feedback",
+          "reranking",
+          "indexing"
+        ],
+        "metrics": {
+          "evidence_recall": 1.0,
+          "reciprocal_rank": 1.0
+        }
+      }
+    }
+  ]
+}

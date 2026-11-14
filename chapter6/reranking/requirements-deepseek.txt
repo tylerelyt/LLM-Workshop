@@ -1,0 +1,2 @@
+# 先运行轻量中文向量召回 + Flash 重排与生成：
+-r ../../requirements-deepseek.txt

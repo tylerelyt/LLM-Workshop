@@ -1,0 +1,6 @@
+# 原 BGE-m3 + BGE Cross-Encoder 路线；首次安装和下载需要较多空间。
+# 轻量 Workshop 使用 requirements-deepseek.txt。
+FlagEmbedding>=1.3,<2
+langchain-text-splitters>=0.3,<2
+numpy>=1.24,<3
+openai>=2,<3

@@ -1,0 +1,2 @@
+langchain>=0.3,<0.4
+openai>=2,<3

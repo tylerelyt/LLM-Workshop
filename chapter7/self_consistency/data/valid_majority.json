@@ -1,0 +1,10 @@
+{
+  "source": "synthetic_model_responses",
+  "question": "三个花坛分别需要10升、20升和30升水，总共需要多少升？",
+  "expected": "60",
+  "responses": [
+    "最终答案：60",
+    "我猜是60和80之间",
+    "最终答案：60"
+  ]
+}
